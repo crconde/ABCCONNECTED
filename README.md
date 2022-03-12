@@ -1,2 +1,0 @@
-# ABCCONNECTED
-Aplicação 
