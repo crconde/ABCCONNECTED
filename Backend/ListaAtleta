@@ -1,8 +1,6 @@
 package Backend;
-
 import java.io.Serializable;
 import java.util.TreeMap;
-
 public class ListaAtleta implements Serializable{
     
     private TreeMap<String, Atleta> lista;
