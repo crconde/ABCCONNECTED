@@ -5,13 +5,13 @@ import java.io.Serializable;
 
 public class Treinador extends Utilizador implements Serializable {
     
- \\   private String nome, email, numero, tipoTreinador;
+    private String nome, email, numero, tipoTreinador;
     
     //construtor
 
     public Treinador() { }
     
- \\   public Treinador(String username , String password,String nome, String email, String numero, String tipoTreinador ) {
+    public Treinador(String username , String password,String nome, String email, String numero, String tipoTreinador ) {
         super(password,username);
         this.nome = nome;
         this.email = email;
@@ -27,7 +27,7 @@ public class Treinador extends Utilizador implements Serializable {
     
     public String getEmail() { return email; }
 
- \\   public String getTipo() { return tipoTreinador; }
+    public String getTipo() { return tipoTreinador; }
     
     //setters
 
@@ -37,5 +37,5 @@ public class Treinador extends Utilizador implements Serializable {
     
     public void setEmail(String email) { this.email = email; }
     
- \\   public void setTipo(String tipoTreinador) { this.tipoTreinador = tipoTreinador; }
+    public void setTipo(String tipoTreinador) { this.tipoTreinador = tipoTreinador; }
 }
