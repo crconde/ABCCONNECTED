@@ -46,7 +46,7 @@ public class Sistema implements Serializable {
     
     public void inicializar() throws UtilizadorDuplicadoException {
         utilizadores.adicionar(new Administrador("admin","admin"));
-        utilizadores.adicionar(new Treinador("treinador","treinador","Sergio Conceicao", "sergioconceicao@gmail.com", "917659524"));
+        utilizadores.adicionar(new Treinador("treinador","treinador","Sergio Conceicao", "sergioconceicao@gmail.com", "917659524","adjunto"));
     }
     
     public void terminar() {
