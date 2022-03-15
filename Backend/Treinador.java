@@ -11,6 +11,7 @@ public class Treinador extends Utilizador implements Serializable {
 
     public Treinador() { }
     
+
     public Treinador(String username , String password,String nome, String email, String numero, String tipo) {
         super(password,username);
         this.nome = nome;
@@ -28,7 +29,7 @@ public class Treinador extends Utilizador implements Serializable {
     public String getEmail() { return email; }
 
     public String getTipo() { return tipo; }
-    
+
     //setters
 
     public void setNome(String nome) { this.nome = nome; }
@@ -38,4 +39,5 @@ public class Treinador extends Utilizador implements Serializable {
     public void setEmail(String email) { this.email = email; }   
 
     public void setTipo(String tipo) { this.tipo = tipo; } 
+    
 }

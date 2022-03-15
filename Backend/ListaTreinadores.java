@@ -3,6 +3,7 @@ package Backend;
 import java.util.TreeMap;
 
 public class ListaTreinadores {
+
     private TreeMap<String, Treinador> lista;
 
     public class TreinadorNaoExistenteException extends Exception {
