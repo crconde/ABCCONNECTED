@@ -7,8 +7,8 @@ import java.io.Serializable;
 public class Equipa implements Serializable {
     
     private String n_Equipa;
-    
-    construtor(){
+
+    public Equipa() { 
 
     }
 
