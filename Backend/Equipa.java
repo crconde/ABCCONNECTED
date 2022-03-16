@@ -9,6 +9,7 @@ public class Equipa implements Serializable {
     
     private String n_Equipa;
     private ArrayList<Atleta> lista;
+    private Treinador treinador;
 
     public Equipa(String n_Equipa) { 
         this.n_Equipa = n_Equipa;
@@ -25,11 +26,18 @@ public class Equipa implements Serializable {
 
     public String getN_equipa() { 
         return n_Equipa; }
-
+    
+    public Treinador getTreinador(){
+        return treinador;
+    }
     //setters
 
     public void setN_equipa(String n_Equipa){ 
         this.n_Equipa = n_Equipa; }
+        
+    public void setTreinador(Treinador treinador){
+        this.treinador = treinador;
+    }
 
 
 }
