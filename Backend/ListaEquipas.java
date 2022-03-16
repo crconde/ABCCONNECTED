@@ -3,7 +3,7 @@ LISTA_EQUIPAS- hashmap(equipa,treinador) + sets() + gets()
 */
 
 package Backend;
-
+import java.io.Serializable;
 import java.util.TreeMap;
 
 public class ListaEquipas {
@@ -25,11 +25,6 @@ public class ListaEquipas {
     }
 
     public ListaEquipas() {
-<<<<<<< HEAD
-        lista = new TreeMap<Equipa, Treinador>();        
-    }
-
-=======
         lista = new TreeMap<>();        
     }
 
@@ -37,18 +32,29 @@ public class ListaEquipas {
         if (equipa == null) {
             throw new NullPointerException("O parâmetro 'stock' não pode ser um valor nulo");
         }
-        if (condition) {
+        if (!lista.containsKey(equipa)) {
+            lista.put(equipa, equipa.getTreinador());
+        }
+        else {
+            throw new EquipaDuplicadaException(String.format("A equipa '%s' já existe na coleção",equipa));
+        }
+    }
+
+    public boolean get_EquipaTrue(Equipa n_equipa){
+        return lista.containsKey(n_equipa);
+    }
+
+    
+
+    public Equipa get_Equipa(Treinador  E) throws EquipaNaoExistenteException {
+        if (lista.containsKey(treinador)) {
+            return lista.get(treinador); 
             
         }
     }
 
-    public void get_Equipa(){
-
-    }
 
 
 
 
-
->>>>>>> 9839f0ab8522e5f121c9ad909c4fd3f3418804f3
 }
