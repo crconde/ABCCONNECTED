@@ -25,7 +25,11 @@ public class ListaEquipas {
     }
 
     public ListaEquipas() {
-        lista = new HashMap<Equipa, Treinador>();        
+        lista = new HashMap<>();        
     }
+
+    
+
+
 
 }
