@@ -2,7 +2,7 @@ package Backend;
 
 import java.util.TreeMap;
 
-public class ListaAtletas {
+public class ListaAtleta {
     private TreeMap<String, Atleta> lista;
 
     public class AtletaNaoExistenteException extends Exception {
@@ -19,7 +19,7 @@ public class ListaAtletas {
         }        
     }
     
-    public ListaAtletas() {
+    public ListaAtleta() {
         lista = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);        
     }
     
