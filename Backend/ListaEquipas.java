@@ -25,6 +25,11 @@ public class ListaEquipas {
     }
 
     public ListaEquipas() {
+<<<<<<< HEAD
+        lista = new TreeMap<Equipa, Treinador>();        
+    }
+
+=======
         lista = new TreeMap<>();        
     }
 
@@ -45,4 +50,5 @@ public class ListaEquipas {
 
 
 
+>>>>>>> 9839f0ab8522e5f121c9ad909c4fd3f3418804f3
 }
