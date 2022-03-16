@@ -4,11 +4,11 @@ LISTA_EQUIPAS- hashmap(equipa,treinador) + sets() + gets()
 
 package Backend;
 
-import java.util.HashMap;
+import java.util.TreeMap;
 
 public class ListaEquipas {
     
-    private HashMap<Equipa, Treinador> lista;
+    private TreeMap<Equipa, Treinador> lista;
 
     public class EquipaNaoExistenteException extends Exception {
         public EquipaNaoExistenteException() { }
@@ -25,10 +25,18 @@ public class ListaEquipas {
     }
 
     public ListaEquipas() {
-        lista = new HashMap<>();        
+        lista = new TreeMap<>();        
     }
 
-    
+    public void set_Equipa(){
+
+    }
+
+    public void get_Equipa(){
+        
+    }
+
+
 
 
 
