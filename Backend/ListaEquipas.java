@@ -28,12 +28,17 @@ public class ListaEquipas {
         lista = new TreeMap<>();        
     }
 
-    public void set_Equipa(){
-
+    public void set_Equipa(Equipa equipa) throws EquipaDuplicadaException{
+        if (equipa == null) {
+            throw new NullPointerException("O parâmetro 'stock' não pode ser um valor nulo");
+        }
+        if (condition) {
+            
+        }
     }
 
     public void get_Equipa(){
-        
+
     }
 
 
