@@ -76,4 +76,5 @@ public class Jogos implements Serializable {
     public void set_hora(Time hora){
         this.hora = hora;
     }
+
 }
