@@ -1,16 +1,15 @@
 package Backend;
 import java.io.Serializable;
 import java.sql.Time;
-import java.util.ArrayList;
 import java.util.Date;
 public class Jogos implements Serializable {
-    private int n_equipa, n_jornada;
+    private int n_equipa, n_jornada,id_jogo;
     private String equipa_adv, competicao, local;
     private Atleta atleta;
     private Treinador treinador;
     private Date data;
     private Time hora; 
-    public Jogos(int n_equipa,Atleta atleta,Treinador treinador,String equipa_adv,Date data,Time hora,String local,String competicao,int n_jornada){
+    public Jogos(int n_equipa,int id_jogo,Atleta atleta,Treinador treinador,String equipa_adv,Date data,Time hora,String local,String competicao,int n_jornada){
         this.atleta = atleta;
         this.treinador =  treinador;
         this.data = data;
@@ -20,8 +19,12 @@ public class Jogos implements Serializable {
         this.equipa_adv = equipa_adv;
         this.competicao = competicao;
         this.local = local;
+        this.id_jogo = id_jogo;
     }
     public Jogos(){}
+    public int get_id_jogo(){
+        return id_jogo;
+    }
     public int get_n_equipa(){
         return n_equipa;
     }
@@ -48,6 +51,9 @@ public class Jogos implements Serializable {
     }
     public Time get_hora(){
         return hora;
+    }
+    public void set_id_jogo(int id_jogo){
+        this.id_jogo = id_jogo; 
     }
     public void set_n_equipa(int n_equipa){
         this.n_equipa = n_equipa;
@@ -76,5 +82,4 @@ public class Jogos implements Serializable {
     public void set_hora(Time hora){
         this.hora = hora;
     }
-
 }
