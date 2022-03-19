@@ -20,15 +20,27 @@ public class Estatisticas implements Serializable
     
     //getters
     	
-    public Jogos get_jogo() { return jogo; }
-    public ListaJogadas get_lista_jogadas(){return lista;}
-    public int get_periodo(){return periodo;}
+    public Jogos get_jogo() {
+        return jogo;
+    }
+    public ListaJogadas get_lista_jogadas(){
+        return lista;
+    }
+    public int get_periodo(){
+        return periodo;
+    }
     
     //setters
 		
-    public void set_lista_jogadas(ListaJogadas lista) { this.lista = lista; }
-    public void set_jogo(Jogos jogo){this.jogo = jogo;}
-    public void set_periodo(int periodo){this.periodo = periodo;}
-    
+    public void set_lista_jogadas(ListaJogadas lista) {
+        this.lista = lista;
+    }
+    public void set_jogo(Jogos jogo){
+        this.jogo = jogo;
+    }
+    public void set_periodo(int periodo){
+        this.periodo = periodo;
+    }
+
 
 }
