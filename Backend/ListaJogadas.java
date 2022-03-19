@@ -1,8 +1,9 @@
 package Backend;
 
+import java.io.Serializable;
 import java.util.TreeMap;
 
-public class ListaJogadas {
+public class ListaJogadas implements Serializable {
     private TreeMap<Integer, Jogadas> lista;
 
     public class JogadaNaoExistenteException extends Exception {
