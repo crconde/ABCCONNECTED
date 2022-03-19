@@ -1,6 +1,4 @@
-/* 
-LISTA_EQUIPAS- hashmap(equipa,treinador) + sets() + gets()
-*/
+
 
 package Backend;
 
@@ -53,7 +51,7 @@ public class ListaEquipas {
         
         }
         else {
-            throw new EquipaNaoExistenteException("A equipa '%s' já existe na lista");
+            throw new EquipaNaoExistenteException("A equipa já existe na lista");
         }
     }
 
