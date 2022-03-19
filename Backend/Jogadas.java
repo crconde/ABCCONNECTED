@@ -7,24 +7,18 @@ public class Jogadas implements Serializable{
     private int distancia,id_jogada;
     private String lado, zona_baliza;
     private Atleta atleta;
-    public Jogadas (){}
-    public Jogadas (int id_jogada,int distancia,String lado,String zona_baliza,Atleta atleta,boolean ataque,boolean defesa,boolean remate,boolean falta,boolean baliza,boolean falhado,boolean sofrida,boolean cometida,boolean corte,boolean assistencia,boolean golo){
+    public Jogadas (boolean ataque, boolean defesa, boolean falta, boolean assistencia, boolean golo, boolean falhado, boolean sofrida, boolean cometida, boolean corte,boolean remate,boolean baliza){ 
         this.ataque = ataque;
         this.defesa = defesa;
         this.remate = remate;
         this.falta = falta;
         this.baliza = baliza;
         this.assistencia = assistencia;
-        this.atleta = atleta;
         this.cometida = cometida;
         this.corte = corte;
-        this.distancia = distancia;
         this.falhado = falhado;
         this.golo = golo;
-        this.lado = lado;
         this.sofrida = sofrida;
-        this.zona_baliza = zona_baliza;
-        this.id_jogada = id_jogada;
     }
     public boolean get_ataque(){
         return ataque;
