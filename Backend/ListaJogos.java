@@ -1,11 +1,10 @@
 package Backend;
 
 import java.io.Serializable;
-import java.util.Date;
 import java.util.TreeMap;
 
 public class ListaJogos implements Serializable {
-    private TreeMap<Date, Jogos> lista;
+    private TreeMap<Integer, Jogos> lista;
 
     public class JogoNaoExistenteException extends Exception {
         public JogoNaoExistenteException() { }
@@ -30,23 +29,23 @@ public class ListaJogos implements Serializable {
             throw new NullPointerException("O parâmetro 'jogo' não pode ser um valor nulo!");
         }        
         
-        if (!lista.containsKey(jogo.get_data())) {
-            lista.put(jogo.get_data(), jogo);
+        if (!lista.containsKey(jogo.get_id_jogo())) {
+            lista.put(jogo.get_id_jogo(), jogo);
         }else{
-            throw new JogoDuplicadoException(String.format("O jogo '%s' já existe na coleção", jogo.get_data()));
+            throw new JogoDuplicadoException(String.format("O jogo '%s' já existe na coleção", jogo.get_id_jogo()));
         }
         
     }      
     
-    public boolean existe(Date data) {
-        return lista.containsKey(data);
+    public boolean existe(int id_jogo) {
+        return lista.containsKey(id_jogo);
     }
     
-    public Jogos get_Jogo(Date data) throws JogoNaoExistenteException {
-        if (lista.containsKey(data)){
-            return lista.get(data);
+    public Jogos get_Jogo(int id_jogo) throws JogoNaoExistenteException {
+        if (lista.containsKey(id_jogo)){
+            return lista.get(id_jogo);
         }else{
-            throw new JogoNaoExistenteException("Já existe um Jogo com nessa data.");
+            throw new JogoNaoExistenteException("Já existe um Jogo com esse id.");
         }
     }
 }

@@ -8,7 +8,7 @@ public class Jogos implements Serializable {
     private Atleta atleta;
     private Treinador treinador;
     private Date data;
-    private Time hora; 
+    private Time hora;
     public Jogos(int n_equipa,int id_jogo,Atleta atleta,Treinador treinador,String equipa_adv,Date data,Time hora,String local,String competicao,int n_jornada){
         this.atleta = atleta;
         this.treinador =  treinador;
